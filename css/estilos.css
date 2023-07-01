@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2? family= Sansita & display=swap');
+
+h1{
+    font-family: 'Sansita', sans-serif;
+    text-align: center;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "seccion1 seccion2"
+    "seccion1 seccion2"
+    "footer footer"
+    ;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    justify-items: center;
+    align-items: center;
+}
+header{
+    grid-area: header;
+    width: 100%;
+    height: 70px;
+    background-color: #C2DEDC;
+    padding: 1px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+h2{
+    font-family: 'Sansita', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+h3{
+    font-family: 'Sansita', sans-serif;
+    text-align:right;
+}
+
+.cajaMasajes{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/masaje1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align:center;
+}
+
+.botonMasajes{
+    width: 50px;
+    height: 20px;
+    background-color: plum;
+    border: 2px solid indigo;
+    border-radius: 2px;
+    text-align:center;
+    color: black;
+}
+
+.cajaDepilacion{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/depilacion1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align:center;
+}
+
+.botonDepilacion{
+    width: 50px;
+    height: 20px;
+    background-color: plum;
+    border: 2px solid indigo;
+    border-radius: 2px;
+    text-align:center;
+    color: black;
+}
+
+.cajaEstetica{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/estetica1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align:center;
+}
+
+.botonEstetica{
+    width: 50px;
+    height: 20px;
+    background-color: plum;
+    border: 2px solid indigo;
+    border-radius: 2px;
+    text-align:center;
+    color: black;
+}
+
+.cajaAparatologia{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/aparatologia1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align:center;
+} 
+
+.botonAparatologia{
+    width: 50px;
+    height: 20px;
+    background-color: plum;
+    border: 2px solid indigo;
+    border-radius: 2px;
+    text-align:center;
+    color: black;
+}
+
+.masaje1{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/masaje-descontracturante1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.masaje2{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/masaje-relajante1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.masaje3{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/masaje_modelador1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.masaje4{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/masaje-drenaje1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.estetica1{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/pesatañas1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.estetica2{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/cejas1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.estetica3{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/manos1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.estetica4{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/pies1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.depilacion1{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/española1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.depilacion2{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/laser1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aparatologia1{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/electrodos1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aparatologia2{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/vacum1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aparatologia3{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/meso1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aparatologia4{
+    width: 350px;
+    height: 200px;
+    background-image: url(../img/preso1.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.descripcion1, 
+.descripcion2,
+.descripcion3,
+.descripcion4 {
+    width: 800px;
+    height: 200px;
+    background-color: beige;
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align:center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sobreNosotros{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/sobreNosotros.jpg);
+    background-size: cover;
+    padding: 1px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#seccion1 {
+    grid-area: seccion1;
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
+}
+
+#seccion2 {
+    grid-area: seccion2;
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    height: 300px;
+    background-color: #CDC2AE;
+    padding: 1px;
+    border: 2px solid gray;
+    border-radius: 10px;    
+    color: black;   
+    display: inline-block; 
+}
+
+.contacto1 {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-image: url(../img/icono1.png);
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.contacto2 {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    background-image: url(../img/icono2.png);
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.horario{
+    text-align: left;
+    color: black;   
+}
