@@ -1,44 +1,410 @@
+/*FUENTES*/
 @import url('https://fonts.googleapis.com/css2? family= Sansita & display=swap');
 
-h1{
-    font-family: 'Sansita', sans-serif;
-    text-align: center;
+/*RESET PARAMETROS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "seccion1 seccion2"
-    "seccion1 seccion2"
-    "footer footer"
-    ;
+
+/*BODY*/
+body {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     justify-items: center;
     align-items: center;
 }
-header{
-    grid-area: header;
+
+/*----------------------------------------HEADER------------------------------------------*/
+header {
+    display: flex;
     width: 100%;
-    height: 70px;
+    min-height: 70px;
     background-color: #C2DEDC;
-    padding: 1px;
-    border: 2px solid gray;
-    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
 }
 
-h2{
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.logo img{
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    margin-right: 20px;
+}
+
+h1 {
     font-family: 'Sansita', sans-serif;
     text-align: center;
-    color: black;
 }
 
-h3{
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }    
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/*-----------------------------------------MAIN---------------------------------------------------*/
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "seccion1 seccion2"
+    "seccion1 seccion2";
+}
+
+/*SECCION 1*/
+.seccion1 {
+    grid-area: seccion1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+/*MASAJES*/
+.seccion1 .masajes{
+    width: 330px;
+    height: 450px;
+    background-color:rgb(139, 204, 206);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.seccion1 .masajes:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.seccion1 .masajes img{
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.seccion1 .masajes h4{
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+.seccion1 .masajes p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.seccion1 .masajes a{
+    font-weight: 500;
+    text-decoration: none;
+    color: darkblue;
+}
+
+/*DEPILACION*/
+.seccion1 .depilacion{
+    width: 330px;
+    height: 450px;
+    background-color:rgb(139, 204, 206);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.seccion1 .depilacion:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.seccion1 .depilacion img{
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.seccion1 .depilacion h4{
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+.seccion1 .depilacion p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.seccion1 .depilacion a{
+    font-weight: 500;
+    text-decoration: none;
+    color: darkblue;
+}
+
+/*SECCION 2*/
+.seccion2 {
+    grid-area: seccion2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+/*ESTETICA*/
+.seccion2 .estetica{
+    width: 330px;
+    height: 450px;
+    background-color:rgb(139, 204, 206);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.seccion2 .estetica:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.seccion2 .estetica img{
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.seccion2 .estetica h4{
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+.seccion2 .estetica p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.seccion2 .estetica a{
+    font-weight: 500;
+    text-decoration: none;
+    color: darkblue;
+}
+
+/*APARATOLOGIA*/
+.seccion2 .aparatologia{
+    width: 330px;
+    height: 450px;
+    background-color:rgb(139, 204, 206);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.seccion2 .aparatologia:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.seccion2 .aparatologia img{
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.seccion2 .aparatologia h4{
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+.seccion2 .aparatologia p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.seccion2 .aparatologia a{
+    font-weight: 500;
+    text-decoration: none;
+    color: darkblue;
+}
+
+h3 {
     font-family: 'Sansita', sans-serif;
     text-align:right;
 }
 
-.cajaMasajes{
+/*-------------------------------------PAGE APARATOLOGIA-------------------------------------------*/
+/*ELECTRODOS*/
+.cardElectrodos{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:500px;
+    background-color: aliceblue;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    font-family: sans-serif;
+    margin: 20px;
+}
+.tituloElectrodos{
+    font-size: 24px;
+    padding: 10px 10px 0 10px;;
+}
+.cuerpoElectrodos{
+    padding: 10px;
+}
+
+.cardElectrodos .cuerpoElectrodos img{
+    width:450px;
+    height:200px;
+    border-radius:15px;
+    margin: 10px;
+}
+
+/*VACUMTERAPIA*/
+.cardVacumterapia{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:500px;
+    background-color: aliceblue;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    font-family: sans-serif;
+    margin: 20px;
+}
+.tituloVacumterapia{
+    font-size: 24px;
+    padding: 10px 10px 0 10px;;
+}
+.cuerpoVacumterapia{
+    padding: 10px;
+}
+
+.cardVacumterapia .cuerpoVacumterapia img{
+    width:450px;
+    height:200px;
+    border-radius:15px;
+    margin: 10px;
+}
+
+/*MESOTERAPIA*/
+.cardMesoterapia{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:500px;
+    background-color: aliceblue;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    font-family: sans-serif;
+    margin: 20px;
+}
+.tituloMesoterapia{
+    font-size: 24px;
+    padding: 10px 10px 0 10px;;
+}
+.cuerpoMesoterapia{
+    padding: 10px;
+}
+
+.cardMesoterapia .cuerpoMesoterapia img{
+    width:450px;
+    height:200px;
+    border-radius:15px;
+    margin: 10px;
+}
+
+/*PRESOTERAPIA*/
+.cardPresoterapia{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:500px;
+    background-color: aliceblue;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    font-family: sans-serif;
+    margin: 20px;
+}
+.tituloPresoterapia{
+    font-size: 24px;
+    padding: 10px 10px 0 10px;;
+}
+.cuerpoPresoterapia{
+    padding: 10px;
+}
+
+.cardPresoterapia .cuerpoPresoterapia img{
+    width:450px;
+    height:200px;
+    border-radius:15px;
+    margin: 10px;
+}
+
+
+
+
+.cajaMasajes {
+    display: flex;
+    flex-direction: column-reverse;
     width: 200px;
     height: 200px;
     background-image: url(../img/masaje1.jpg);
@@ -47,20 +413,13 @@ h3{
     margin: 20px;
     border: 2px solid gray;
     border-radius: 10px;
-    text-align:center;
-}
-
-.botonMasajes{
-    width: 50px;
-    height: 20px;
-    background-color: plum;
-    border: 2px solid indigo;
-    border-radius: 2px;
-    text-align:center;
-    color: black;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(99, 96, 96);
 }
 
 .cajaDepilacion{
+    display: flex;
+    flex-direction: column-reverse;
     width: 200px;
     height: 200px;
     background-image: url(../img/depilacion1.jpg);
@@ -69,20 +428,12 @@ h3{
     margin: 20px;
     border: 2px solid gray;
     border-radius: 10px;
-    text-align:center;
+    box-shadow: 5px 5px 5px rgb(99, 96, 96);
 }
 
-.botonDepilacion{
-    width: 50px;
-    height: 20px;
-    background-color: plum;
-    border: 2px solid indigo;
-    border-radius: 2px;
-    text-align:center;
-    color: black;
-}
-
-.cajaEstetica{
+.cajaEstetica {
+    display: flex;
+    flex-direction: column-reverse;
     width: 200px;
     height: 200px;
     background-image: url(../img/estetica1.jpg);
@@ -91,20 +442,12 @@ h3{
     margin: 20px;
     border: 2px solid gray;
     border-radius: 10px;
-    text-align:center;
-}
-
-.botonEstetica{
-    width: 50px;
-    height: 20px;
-    background-color: plum;
-    border: 2px solid indigo;
-    border-radius: 2px;
-    text-align:center;
-    color: black;
+    box-shadow: 5px 5px 5px rgb(99, 96, 96);
 }
 
 .cajaAparatologia{
+    display: flex;
+    flex-direction: column-reverse;
     width: 200px;
     height: 200px;
     background-image: url(../img/aparatologia1.jpg);
@@ -113,17 +456,7 @@ h3{
     margin: 20px;
     border: 2px solid gray;
     border-radius: 10px;
-    text-align:center;
-} 
-
-.botonAparatologia{
-    width: 50px;
-    height: 20px;
-    background-color: plum;
-    border: 2px solid indigo;
-    border-radius: 2px;
-    text-align:center;
-    color: black;
+    box-shadow: 5px 5px 5px rgb(99, 96, 96);
 }
 
 .masaje1{
@@ -266,6 +599,8 @@ h3{
     vertical-align: middle;
 }
 
+
+/**/
 .aparatologia1{
     width: 350px;
     height: 200px;
@@ -353,55 +688,29 @@ h3{
     vertical-align: middle;
 }
 
-#seccion1 {
-    grid-area: seccion1;
-    display: inline-block;
-    justify-items: center;
-    align-items: center;
-}
-
-#seccion2 {
-    grid-area: seccion2;
-    display: inline-block;
-    justify-items: center;
-    align-items: center;
-}
-
-footer {
-    grid-area: footer;
+/*------------------------------------------FOOTER----------------------------------------------*/
+.footer{
     width: 100%;
-    height: 300px;
-    background-color: #CDC2AE;
-    padding: 1px;
-    border: 2px solid gray;
-    border-radius: 10px;    
-    color: black;   
-    display: inline-block; 
+    background-color: #C2DEDC;
 }
 
-.contacto1 {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    border: 2px solid gray;
-    border-radius: 10px;
-    background-image: url(../img/icono1.png);
-    background-size: cover;
-    vertical-align: middle;
+.footer .grupo1{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
 }
 
-.contacto2 {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    border-radius: 10px;
-    border: 2px solid gray;
-    background-image: url(../img/icono2.png);
-    background-size: cover;
-    vertical-align: middle;
+.footer .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.horario{
-    text-align: left;
-    color: black;   
+.footer .grupo1 .box figure img{
+    width: 250px;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,99 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/estilos.css">
 
+    <!--ICONOS-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
     <!--BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <!--header-->
-    <header>        
-            <h1>Centro Estético Corporal</h1>
+    <!--HEADER-->
+    <header>
+        <div class="logo">
+            <img src="./img/Logo.jpeg" alt="logo">
+        </div>
+        <div class="nombre">
+            <h1 class="nombreConsultorio">Centro Estético Corporal</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="./pages/sobreNosotros.html" class="nav-link">Nosotros</a>
+        </nav>
     </header>
 
-    <!--main-->
+    <!--MAIN-->
     <main>
-        <section id="seccion1">
-            <div class="cajaMasajes">
-                <h2>Masajes</h2>
-                <a href="./pages/masajes.html" class="botonMasajes">Botón</a>
+        <section class="seccion1">
+            <!--MASAJES-->
+            <div class="masajes">
+                <img src="./img/masaje1.jpg">
+                <h4 class="masajesTitulo">Masajes</h5>
+                <p class="masajesDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis soluta explicabo fugit dolore. Molestias distinctio illo enim optio, odio reprehenderit!</p>
+                <a href="./pages/masajes.html">Ver</a>
             </div>
-            <div class="cajaDepilacion">
-                <h2>Depilación</h2>
-                <a href="./pages/depilacion.html" class="botonDepilacion">Botón</a>
+
+            <!--DEPILACION-->
+            <div class="depilacion">
+                <img src="./img/depilacion1.jpg">
+                <h4 class="depilacionTitulo">Depilación</h5>
+                <p class="depilacionDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus officiis laboriosam quia alias dicta numquam adipisci nisi totam nihil.</p>
+                <a href="./pages/depilacion.html">Ver</a>
             </div>
         </section>
-        <section id="seccion2">
-            <div class="cajaEstetica">
-                <h2>Estética</h2>
-                <a href="./pages/estetica.html" class="botonEstetica">Botón</a>
+
+        <section class="seccion2">
+            <!--ESTETICA-->
+            <div class="estetica">
+                <img src="./img/estetica1.jpg">
+                <h4 class="esteticaTitulo">Estética</h5>
+                <p class="esteticaDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias numquam aliquam similique ratione soluta amet et animi iusto quibusdam delectus.</p>
+                <a href="./pages/estetica.html">Ver</a>
             </div>
-            <div class="cajaAparatologia">
-                <h2>Aparatología</h2>
-                <a href="./pages/aparatologia.html" class="botonAparatologia">Botón</a>                
+
+            <!--APARATOLOGIA-->
+            <div class="aparatologia">
+                <img src="./img/aparatologia1.jpg">
+                <h4 class="aparatologiaTitulo">Aparatología</h5>
+                <p class="aparatologiaDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, expedita inventore? Facilis alias optio dolor iusto hic facere neque quia!</p>
+                <a href="./pages/aparatologia.html">Ver</a>
             </div>
         </section>
     </main>
 
-    <!--footer-->
-    <footer>       
-            <section>
-                <h3>Contacto</h3>
-                <p class="horario">Horario: de Lunes a Viernes de 8:00 a 19:00hs</p>  
-                <div class="contacto1"></div>  
-                <div class="contacto2"></div>
-            </section>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="./img/Logo.jpeg" alt="logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit nemo totam dolor excepturi ut illo
+                    iste blanditiis et nostrum, harum omnis beatae nobis quod ad vero inventore, odio eum!</P>
+            </div>
+            <div class="box">
+                <h2>CONTACTO</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2023 <b>Centro Estético Corporal</b> - Todos los Derechos Reservados.</small>
+        </div>
     </footer>
 </body>
+
 </html>
