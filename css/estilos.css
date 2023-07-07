@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2? family= Sansita & display=swap');
 
 /*RESET PARAMETROS*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,43 +36,44 @@ header {
     align-items: center;
 }
 
-nav a{
+nav a {
     font-weight: 600;
     padding-right: 10px;
 }
 
-nav a:hover{
+nav a:hover {
     color: white;
 }
 
-.logo img{
+.logo img {
     height: 50px;
     border-radius: 50%;
     align-items: center;
     margin-right: 20px;
 }
 
-h1 {
+.nombreConsultorio {
     font-family: 'Sansita', sans-serif;
     text-align: center;
 }
 
-@media (max-width:700px){
-    header{
+@media (max-width:700px) {
+    header {
         flex-direction: column;
-    }    
-    nav{
+    }
+
+    nav {
         padding: 10px 0px;
     }
 }
 
 /*-----------------------------------------MAIN---------------------------------------------------*/
 
-main{
+main {
     display: grid;
-    grid-template-areas: 
-    "seccion1 seccion2"
-    "seccion1 seccion2";
+    grid-template-areas:
+        "seccion1 seccion2"
+        "seccion1 seccion2";
 }
 
 /*SECCION 1*/
@@ -87,10 +88,10 @@ main{
 }
 
 /*MASAJES*/
-.seccion1 .masajes{
+.seccion1 .masajes {
     width: 330px;
     height: 450px;
-    background-color:rgb(139, 204, 206);
+    background-color: rgb(139, 204, 206);
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -99,12 +100,12 @@ main{
     transition: all 0.25s;
 }
 
-.seccion1 .masajes:hover{
+.seccion1 .masajes:hover {
     transform: translateY(-15px);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.seccion1 .masajes img{
+.seccion1 .masajes img {
     width: 300px;
     height: 220px;
     border-radius: 8px;
@@ -115,28 +116,28 @@ main{
     transition: all 0.25s;
 }
 
-.seccion1 .masajes h4{
+.seccion1 .masajes h4 {
     padding: 0 1rem;
     font-weight: 600;
 }
 
-.seccion1 .masajes p{
+.seccion1 .masajes p {
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
 }
 
-.seccion1 .masajes a{
+.seccion1 .masajes a {
     font-weight: 500;
     text-decoration: none;
     color: darkblue;
 }
 
 /*DEPILACION*/
-.seccion1 .depilacion{
+.seccion1 .depilacion {
     width: 330px;
     height: 450px;
-    background-color:rgb(139, 204, 206);
+    background-color: rgb(139, 204, 206);
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -145,12 +146,12 @@ main{
     transition: all 0.25s;
 }
 
-.seccion1 .depilacion:hover{
+.seccion1 .depilacion:hover {
     transform: translateY(-15px);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.seccion1 .depilacion img{
+.seccion1 .depilacion img {
     width: 300px;
     height: 220px;
     border-radius: 8px;
@@ -161,18 +162,18 @@ main{
     transition: all 0.25s;
 }
 
-.seccion1 .depilacion h4{
+.seccion1 .depilacion h4 {
     padding: 0 1rem;
     font-weight: 600;
 }
 
-.seccion1 .depilacion p{
+.seccion1 .depilacion p {
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
 }
 
-.seccion1 .depilacion a{
+.seccion1 .depilacion a {
     font-weight: 500;
     text-decoration: none;
     color: darkblue;
@@ -190,10 +191,10 @@ main{
 }
 
 /*ESTETICA*/
-.seccion2 .estetica{
+.seccion2 .estetica {
     width: 330px;
     height: 450px;
-    background-color:rgb(139, 204, 206);
+    background-color: rgb(139, 204, 206);
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -202,12 +203,12 @@ main{
     transition: all 0.25s;
 }
 
-.seccion2 .estetica:hover{
+.seccion2 .estetica:hover {
     transform: translateY(-15px);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.seccion2 .estetica img{
+.seccion2 .estetica img {
     width: 300px;
     height: 220px;
     border-radius: 8px;
@@ -218,28 +219,28 @@ main{
     transition: all 0.25s;
 }
 
-.seccion2 .estetica h4{
+.seccion2 .estetica h4 {
     padding: 0 1rem;
     font-weight: 600;
 }
 
-.seccion2 .estetica p{
+.seccion2 .estetica p {
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
 }
 
-.seccion2 .estetica a{
+.seccion2 .estetica a {
     font-weight: 500;
     text-decoration: none;
     color: darkblue;
 }
 
 /*APARATOLOGIA*/
-.seccion2 .aparatologia{
+.seccion2 .aparatologia {
     width: 330px;
     height: 450px;
-    background-color:rgb(139, 204, 206);
+    background-color: rgb(139, 204, 206);
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -248,12 +249,12 @@ main{
     transition: all 0.25s;
 }
 
-.seccion2 .aparatologia:hover{
+.seccion2 .aparatologia:hover {
     transform: translateY(-15px);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.seccion2 .aparatologia img{
+.seccion2 .aparatologia img {
     width: 300px;
     height: 220px;
     border-radius: 8px;
@@ -264,18 +265,18 @@ main{
     transition: all 0.25s;
 }
 
-.seccion2 .aparatologia h4{
+.seccion2 .aparatologia h4 {
     padding: 0 1rem;
     font-weight: 600;
 }
 
-.seccion2 .aparatologia p{
+.seccion2 .aparatologia p {
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
 }
 
-.seccion2 .aparatologia a{
+.seccion2 .aparatologia a {
     font-weight: 500;
     text-decoration: none;
     color: darkblue;
@@ -283,124 +284,133 @@ main{
 
 h3 {
     font-family: 'Sansita', sans-serif;
-    text-align:right;
+    text-align: right;
 }
 
 /*-------------------------------------PAGE APARATOLOGIA-------------------------------------------*/
 /*ELECTRODOS*/
-.cardElectrodos{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    width:500px;
+.cardElectrodos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
     background-color: aliceblue;
     border: 1px solid lightgray;
     box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    border-radius:15px;
+    border-radius: 15px;
     font-family: sans-serif;
     margin: 20px;
 }
-.tituloElectrodos{
+
+.tituloElectrodos {
     font-size: 24px;
-    padding: 10px 10px 0 10px;;
+    padding: 10px 10px 0 10px;
+    ;
 }
-.cuerpoElectrodos{
+
+.cuerpoElectrodos {
     padding: 10px;
 }
 
-.cardElectrodos .cuerpoElectrodos img{
-    width:450px;
-    height:200px;
-    border-radius:15px;
+.cardElectrodos .cuerpoElectrodos img {
+    width: 450px;
+    height: 200px;
+    border-radius: 15px;
     margin: 10px;
 }
 
 /*VACUMTERAPIA*/
-.cardVacumterapia{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    width:500px;
+.cardVacumterapia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
     background-color: aliceblue;
     border: 1px solid lightgray;
     box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    border-radius:15px;
+    border-radius: 15px;
     font-family: sans-serif;
     margin: 20px;
 }
-.tituloVacumterapia{
+
+.tituloVacumterapia {
     font-size: 24px;
-    padding: 10px 10px 0 10px;;
+    padding: 10px 10px 0 10px;
+    ;
 }
-.cuerpoVacumterapia{
+
+.cuerpoVacumterapia {
     padding: 10px;
 }
 
-.cardVacumterapia .cuerpoVacumterapia img{
-    width:450px;
-    height:200px;
-    border-radius:15px;
+.cardVacumterapia .cuerpoVacumterapia img {
+    width: 450px;
+    height: 200px;
+    border-radius: 15px;
     margin: 10px;
 }
 
 /*MESOTERAPIA*/
-.cardMesoterapia{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    width:500px;
+.cardMesoterapia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
     background-color: aliceblue;
     border: 1px solid lightgray;
     box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    border-radius:15px;
+    border-radius: 15px;
     font-family: sans-serif;
     margin: 20px;
 }
-.tituloMesoterapia{
+
+.tituloMesoterapia {
     font-size: 24px;
-    padding: 10px 10px 0 10px;;
+    padding: 10px 10px 0 10px;
+    ;
 }
-.cuerpoMesoterapia{
+
+.cuerpoMesoterapia {
     padding: 10px;
 }
 
-.cardMesoterapia .cuerpoMesoterapia img{
-    width:450px;
-    height:200px;
-    border-radius:15px;
+.cardMesoterapia .cuerpoMesoterapia img {
+    width: 450px;
+    height: 200px;
+    border-radius: 15px;
     margin: 10px;
 }
 
 /*PRESOTERAPIA*/
-.cardPresoterapia{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    width:500px;
+.cardPresoterapia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
     background-color: aliceblue;
     border: 1px solid lightgray;
     box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    border-radius:15px;
+    border-radius: 15px;
     font-family: sans-serif;
     margin: 20px;
 }
-.tituloPresoterapia{
+
+.tituloPresoterapia {
     font-size: 24px;
-    padding: 10px 10px 0 10px;;
+    padding: 10px 10px 0 10px;
+    ;
 }
-.cuerpoPresoterapia{
+
+.cuerpoPresoterapia {
     padding: 10px;
 }
 
-.cardPresoterapia .cuerpoPresoterapia img{
-    width:450px;
-    height:200px;
-    border-radius:15px;
+.cardPresoterapia .cuerpoPresoterapia img {
+    width: 450px;
+    height: 200px;
+    border-radius: 15px;
     margin: 10px;
 }
-
-
-
 
 .cajaMasajes {
     display: flex;
@@ -417,7 +427,7 @@ h3 {
     box-shadow: 5px 5px 5px rgb(99, 96, 96);
 }
 
-.cajaDepilacion{
+.cajaDepilacion {
     display: flex;
     flex-direction: column-reverse;
     width: 200px;
@@ -445,7 +455,7 @@ h3 {
     box-shadow: 5px 5px 5px rgb(99, 96, 96);
 }
 
-.cajaAparatologia{
+.cajaAparatologia {
     display: flex;
     flex-direction: column-reverse;
     width: 200px;
@@ -459,7 +469,7 @@ h3 {
     box-shadow: 5px 5px 5px rgb(99, 96, 96);
 }
 
-.masaje1{
+.masaje1 {
     width: 350px;
     height: 200px;
     background-image: url(../img/masaje-descontracturante1.jpg);
@@ -473,7 +483,7 @@ h3 {
     vertical-align: middle;
 }
 
-.masaje2{
+.masaje2 {
     width: 350px;
     height: 200px;
     background-image: url(../img/masaje-relajante1.jpg);
@@ -487,7 +497,7 @@ h3 {
     vertical-align: middle;
 }
 
-.masaje3{
+.masaje3 {
     width: 350px;
     height: 200px;
     background-image: url(../img/masaje_modelador1.jpg);
@@ -501,7 +511,7 @@ h3 {
     vertical-align: middle;
 }
 
-.masaje4{
+.masaje4 {
     width: 350px;
     height: 200px;
     background-image: url(../img/masaje-drenaje1.jpg);
@@ -515,7 +525,7 @@ h3 {
     vertical-align: middle;
 }
 
-.estetica1{
+.estetica1 {
     width: 350px;
     height: 200px;
     background-image: url(../img/pesatañas1.jpg);
@@ -529,7 +539,7 @@ h3 {
     vertical-align: middle;
 }
 
-.estetica2{
+.estetica2 {
     width: 350px;
     height: 200px;
     background-image: url(../img/cejas1.jpg);
@@ -543,7 +553,7 @@ h3 {
     vertical-align: middle;
 }
 
-.estetica3{
+.estetica3 {
     width: 350px;
     height: 200px;
     background-image: url(../img/manos1.jpg);
@@ -557,7 +567,7 @@ h3 {
     vertical-align: middle;
 }
 
-.estetica4{
+.estetica4 {
     width: 350px;
     height: 200px;
     background-image: url(../img/pies1.jpg);
@@ -571,7 +581,7 @@ h3 {
     vertical-align: middle;
 }
 
-.depilacion1{
+.depilacion1 {
     width: 350px;
     height: 200px;
     background-image: url(../img/española1.jpg);
@@ -585,7 +595,7 @@ h3 {
     vertical-align: middle;
 }
 
-.depilacion2{
+.depilacion2 {
     width: 350px;
     height: 200px;
     background-image: url(../img/laser1.jpg);
@@ -601,7 +611,7 @@ h3 {
 
 
 /**/
-.aparatologia1{
+.aparatologia1 {
     width: 350px;
     height: 200px;
     background-image: url(../img/electrodos1.jpg);
@@ -615,7 +625,7 @@ h3 {
     vertical-align: middle;
 }
 
-.aparatologia2{
+.aparatologia2 {
     width: 350px;
     height: 200px;
     background-image: url(../img/vacum1.jpg);
@@ -629,7 +639,7 @@ h3 {
     vertical-align: middle;
 }
 
-.aparatologia3{
+.aparatologia3 {
     width: 350px;
     height: 200px;
     background-image: url(../img/meso1.jpg);
@@ -643,7 +653,7 @@ h3 {
     vertical-align: middle;
 }
 
-.aparatologia4{
+.aparatologia4 {
     width: 350px;
     height: 200px;
     background-image: url(../img/preso1.jpg);
@@ -657,7 +667,7 @@ h3 {
     vertical-align: middle;
 }
 
-.descripcion1, 
+.descripcion1,
 .descripcion2,
 .descripcion3,
 .descripcion4 {
@@ -669,12 +679,12 @@ h3 {
     margin: 20px;
     border: 2px solid gray;
     border-radius: 10px;
-    text-align:center;
+    text-align: center;
     display: inline-block;
     vertical-align: middle;
 }
 
-.sobreNosotros{
+.sobreNosotros {
     width: 100%;
     height: 300px;
     background-image: url(../img/sobreNosotros.jpg);
@@ -689,12 +699,12 @@ h3 {
 }
 
 /*------------------------------------------FOOTER----------------------------------------------*/
-.footer{
+.footer {
     width: 100%;
     background-color: #C2DEDC;
 }
 
-.footer .grupo1{
+.footer .grupo1 {
     width: 100%;
     margin: auto;
     display: grid;
@@ -703,7 +713,7 @@ h3 {
     padding: 45px 0px;
 }
 
-.footer .grupo1 .box figure{
+.footer .grupo1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
@@ -711,6 +721,17 @@ h3 {
     align-items: center;
 }
 
-.footer .grupo1 .box figure img{
+.footer .grupo1 .box figure img {
     width: 250px;
+}
+
+.red-social {
+    display: flex;
+    gap: 20px;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-whatsapp {
+    font-size: 24px;
 }
